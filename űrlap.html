@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>űrlap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="index.html">főoldal</a>
+    <a href="kep.html">képlink</a>
+    <a href="lista.html">listám</a>
+    <a href="tablazat.html">táblázat</a>
+    <a href="űrlap.html">űrlap</a>
+    <div class="content">
+        <form name="rendeles">
+            <h1 style="color: rgb(255, 0, 0)">saját feliratú póló rendelés</h1>
+            <fieldset style="color: rgb(255, 0, 0)">
+                <legend>Vevő adatai:</legend>
+                <p><label>Név: <input type="text" name="nev">
+                        <small>Vezetéknév Keresztnév</small></label></p>
+                <p><label>Telefon: <input type="tel" name="telefon" size="10"></label></p>
+                <p><label>Email: <input type="text" name="email" size="10"></label></p>
+                <p><label>Szállítási cím <input type="text" name="szallitasi cim"><small>város,utca,ház szám</small></label></p>
+            </fieldset>
+            <fieldset style="color:rgb(255, 0, 0)">
+                <legend>póló mérete</legend>
+                <p><label>XS<input type="radio" name="meret"></label></p>
+                <p><label>S<input type="radio" name="meret"></label></p>
+                <p><label>M<input type="radio" name="meret"></label></p>
+                <p><label>L<input type="radio" name="meret"></label></p>
+                <p><label>XL<input type="radio" name="meret"></label></p>
+            </fieldset>
+            <fieldset style="color: rgb(255, 0, 0)">
+                <legend>póló színe:</legend>
+                <p><label><input type="radio" name="szin" value="feher">fehér</label></p>
+                <p><label><input type="radio" name="szin" value="fekete">fekete</label></p>
+                <p><label><input type="radio" name="szin" value="piros">piros</label></p>
+                <p><label><input type="radio" name="szin" value="zold">zöld</label></p>
+                <p><label><input type="radio" name="szin" value="kek">kék</label></p>
+                <p><label><input type="radio" name="szin" value="sarga">sárga</label></p>
+            </fieldset>
+            <fieldset style="color: rgb(255, 0, 0)">
+                <legend>pólón lévő felirat</legend>
+                <p><label>felirat: <input type="tel" name="falirat" size="10"></label></p>
+            </fieldset>
+            <fieldset style="color: rgb(255, 0, 0)">
+                <legend>felirat színe:</legend>
+                <p><label><input type="radio" name="szin" value="feher">fehér</label></p>
+                <p><label><input type="radio" name="szin" value="fekete">fekete</label></p>
+                <p><label><input type="radio" name="szin" value="piros">piros</label></p>
+                <p><label><input type="radio" name="szin" value="zold">zöld</label></p>
+                <p><label><input type="radio" name="szin" value="kek">kék</label></p>
+                <p><label><input type="radio" name="szin" value="sarga">sárga</label></p>
+            </fieldset>
+            <fieldset style="color: rgb(255, 0, 0)">
+                <legend>felirat elhelyezése</legend>
+                <p><label><input type="radio" name="elhelyezes" value="felül">felül</label></p>
+                <p><label><input type="radio" name="elhelyezes" value="közep">közép</label></p>
+                <p><label><input type="radio" name="elhelyezes" value="alul">alul</label></p>
+            </fieldset>
+            <fieldset style="color: rgb(255, 0, 0)">
+                <input type="reset" name="visszaallitas">
+                <input type="submit" name="kuldes">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
