@@ -21,3 +21,12 @@
 body{
   background-image: url(hatter.jpg);
 }
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: rgb(171, 57, 247);
+}
