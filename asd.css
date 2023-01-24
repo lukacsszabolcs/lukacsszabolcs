@@ -30,3 +30,11 @@ footer{
   background-color: black;
   color: rgb(171, 57, 247);
 }
+img, video
+{
+  width: 100%;
+}
+h1, p{
+  font-size: 3vw ;
+  text-align: center;
+}
