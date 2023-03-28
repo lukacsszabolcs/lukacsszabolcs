@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pitagorasz</title>
+    <link rel="stylesheet" href="asd.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
+    .stylo1{
+        font-family: 'Shantell Sans', cursive;
+        color: rgb(0, 255, 42);
+    }
+</style>
+
+
+<body>
+    <ul class="link1">
+        <li class="link2" >
+            <a href="index.html">főoldal</a>
+        </li>
+        <li class="link2" >
+            <a href="kep.html">képlink</a>
+        </li>
+        <li class="link2" >
+            <a href="lista.html">listám</a>
+        </li>
+        <li class="link2" >
+            <a href="tablazat.html">táblázat</a>
+        </li>
+        <li class="link2" >
+            <a href="űrlap.html">űrlap</a>
+        </li>
+        <li class="link2" >
+            <a href="évszakok.html">évszakok</a>
+        </li>
+        <li class="link2">
+            <a href="szamologep.html">számológép</a>
+        </li>
+        <li class="link2" >
+            <a style="color: rgb(0, 255, 42);" href="pit.html">pitagorasz tétel számoló</a>
+        </li>
+    </ul>
+<h1 class="stylo1"> pitagorasz tétel számoló</h1>
+    <form action="javascript:void(0)">
+        <fieldset style="width: 70%;">
+            <legend style="color: rgb(171, 57, 247);">pitagorasz</legend>
+            <label for="a">a:</label> <input type="text" name="pit" id="a" placeholder="a oldal" oninput="szamol()">
+            <br>
+            <label for="b">b:</label><input type="text" name="pit" id="b" placeholder="b oldal" oninput="szamol()">
+            <br>
+            <label for="c">c:</label><input type="text" name="pit" id="c" placeholder="c oldal" oninput="szamol()">
+            <br>
+            <input type="button" value="törlés" onclick="torol()"> 
+            <br><br>
+            
+        </fieldset>
+    </form>
+
+
+    <script>
+        function szamol() {
+            if (a.value != 0 && b.value != 0) {
+                c.value = Math.sqrt((a.value * a.value) + (b.value * b.value))
+            }
+            else if (a.value != 0 && c.value != 0) {
+                b.value = Math.sqrt((c.value * c.value) + (a.value * a.value))
+            }
+            else if (b.value != 0 && c.value != 0) {
+                a.value = Math.sqrt((c.value * c.value) + (b.value * b.value))
+            }
+        }
+        function torol() {
+            a.value = ""
+            b.value = ""
+            c.value = ""
+        }
+    </script>
+</body>
+
+</html>
